@@ -43,5 +43,5 @@ class Player(pygame.sprite.Sprite):
     def update_mask(self):
         maskSurface = self.surf
         maskSurface = pygame.transform.scale(maskSurface, (WIDTH * .8, HEIGHT * .8))
-        self.mask = pygame,mask.from_surface.from_surface(maskSurface)
+        self.mask = pygame.mask.from_surface.from_surface(maskSurface)
         
