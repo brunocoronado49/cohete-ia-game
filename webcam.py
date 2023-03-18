@@ -2,6 +2,7 @@ from threading import Thread
 import cv2
 import platform
 
+
 class Webcam:
     def __init__(self):
         self.stopped = False
@@ -46,4 +47,3 @@ class Webcam:
     
     def ready(self):
         return self.lastFrame is not None
-    
