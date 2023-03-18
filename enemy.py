@@ -4,7 +4,7 @@ import random
 import globals
 
 
-ORIGINAL_SIZE = (60.154)
+ORIGINAL_SIZE = (140,254)
 MIN_WIDTH = 15
 MAX_WIDTH = 25
 
@@ -13,7 +13,7 @@ class Enemy(pygame.sprite.Sprite):
         super(Enemy, self).__init__()
         
         self.width = random.randint(MIN_WIDTH, MAX_WIDTH)
-        self.height = (self.width / ORIGINAL_SIZE[0]) * ORIGINAL_SIZE[1]
+        self.height = (self.width/ORIGINAL_SIZE[0])*ORIGINAL_SIZE[1]
         
         self.surf = pygame.image.load("assets/ovni.png").convert_alpha()
         self.surf = pygame.transform.scale(self.surf, (self.width, self.height))

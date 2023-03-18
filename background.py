@@ -9,13 +9,13 @@ class Background(pygame.sprite.Sprite):
         self.surf = pygame.image.load("assets/background.png")
         background_width = SCREEN_WIDTH * 2
         background_height = (background_width / self.surf.get_width()) * self.surf.get_height()
-        self.surf = pygame.transform.sclae(self.surf, (background_width, background_height))
+        self.surf = pygame.transform.scale(self.surf, (background_width, background_height))
         self.rect = self.surf.get_rect(
             bottomleft = (0, SCREEN_HEIGHT)
         )
         
         self.surf2 = self.surf
-        self.surf2 = self.surf2.get_rect(
+        self.rect2 = self.surf2.get_rect(
             bottomleft = self.rect.topleft
         )
         self.ypos = 0
