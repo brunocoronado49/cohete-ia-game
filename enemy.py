@@ -4,7 +4,7 @@ import random
 import globals
 
 
-ORIGINAL_SIZE = (140,254)
+ORIGINAL_SIZE = (140,354)
 MIN_WIDTH = 15
 MAX_WIDTH = 25
 
